@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio - College Mini Project" />
+  <title>Student Portfolio | Web Developer & Tech Enthusiast</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-accent">Portfolio</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="nav__btns">
+        <!-- Theme toggle button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content">
+          <span class="home__subtitle">👋 Welcome to my portfolio</span>
+          <h1 class="home__title">
+            Hi, I'm <span class="gradient-text">Alex Sharma</span>
+          </h1>
+          <h2 class="home__profession">Computer Science Student &amp; Aspiring Developer</h2>
+          <p class="home__description">
+            Passionate about building responsive, accessible web applications and solving real-world challenges through clean code and modern technologies.
+          </p>
+
+          <div class="home__buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-briefcase"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="home__social">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="home__social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="home__social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:your-email@example.com" class="home__social-link" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="home__social-link" title="Twitter/X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home__image-wrapper">
+          <div class="home__blob">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Profile avatar" class="home__img" />
+          </div>
+          <div class="home__badge badge-experience">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <h4>Mini Project</h4>
+              <span>HTML5 &amp; CSS3</span>
+            </div>
+          </div>
+          <div class="home__badge badge-projects">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h4>B.Tech / BCA / CS</h4>
+              <span>Final Year</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My background &amp; journey</span>
+
+        <div class="about__container grid">
+          <div class="about__data">
+            <p class="about__description">
+              Hello! I am a passionate engineering student specializing in computer science. I love transforming ideas into tangible, pixel-perfect web projects. When I'm not writing code, I enjoy exploring new tech stacks, participating in college hackathons, and contributing to open-source discussions.
+            </p>
+
+            <div class="about__info grid">
+              <div class="about__box">
+                <i class="fa-solid fa-award about__icon"></i>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle">Academic &amp; Internships</span>
+              </div>
+              <div class="about__box">
+                <i class="fa-solid fa-folder-open about__icon"></i>
+                <h3 class="about__title">Completed</h3>
+                <span class="about__subtitle">5+ Mini &amp; Major Projects</span>
+              </div>
+              <div class="about__box">
+                <i class="fa-solid fa-headset about__icon"></i>
+                <h3 class="about__title">Collab</h3>
+                <span class="about__subtitle">Always open to team projects</span>
+              </div>
+            </div>
+
+            <div class="about__actions">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Let's Talk
+              </a>
+              <a href="#" class="btn btn-outline" download>
+                <i class="fa-solid fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+      <div class="container">
+        <h2 class="section__title">Education</h2>
+        <span class="section__subtitle">My academic qualification</span>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022 - Present</span>
+              <h3 class="timeline__title">Bachelor of Technology (Computer Science &amp; Engineering)</h3>
+              <h4 class="timeline__subtitle">ABC Institute of Engineering &amp; Technology</h4>
+              <p class="timeline__text">
+                Current CGPA: 8.7 / 10. Relevant coursework includes Data Structures, Web Technologies, Database Management Systems, and Object-Oriented Programming.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2020 - 2022</span>
+              <h3 class="timeline__title">Higher Secondary Education (Class XII - Science)</h3>
+              <h4 class="timeline__subtitle">St. Xavier's Senior Secondary School</h4>
+              <p class="timeline__text">
+                Specialized in Physics, Chemistry, and Mathematics (PCM). Scored 91.4% with distinction in Computer Science.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2019 - 2020</span>
+              <h3 class="timeline__title">Secondary School Certificate (Class X)</h3>
+              <h4 class="timeline__subtitle">St. Xavier's Senior Secondary School</h4>
+              <p class="timeline__text">
+                Graduated with 93.6% aggregate. Active participant in state-level science fairs and coding clubs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills &amp; Technologies</h2>
+        <span class="section__subtitle">What I work with</span>
+
+        <div class="skills__container grid">
+          <!-- Frontend Category -->
+          <div class="skills__card">
+            <div class="skills__header">
+              <i class="fa-solid fa-code skills__header-icon"></i>
+              <h3 class="skills__group-title">Frontend Development</h3>
+            </div>
+            <div class="skills__list">
+              <div class="skills__item">
+                <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>HTML5</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>CSS3 &amp; Flex/Grid</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <i class="fa-brands fa-js skill-icon js-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>JavaScript (ES6+)</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <i class="fa-brands fa-bootstrap skill-icon bootstrap-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>Responsive Design</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming & Backend Category -->
+          <div class="skills__card">
+            <div class="skills__header">
+              <i class="fa-solid fa-server skills__header-icon"></i>
+              <h3 class="skills__group-title">Languages &amp; Core CS</h3>
+            </div>
+            <div class="skills__list">
+              <div class="skills__item">
+                <i class="fa-brands fa-python skill-icon python-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>Python</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <i class="fa-brands fa-java skill-icon java-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>C / C++ &amp; Java</span>
+                    <span>78%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 78%"></div></div>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <i class="fa-solid fa-database skill-icon db-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>SQL / MySQL</span>
+                    <span>82%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 82%"></div></div>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <i class="fa-brands fa-git-alt skill-icon git-color"></i>
+                <div class="skills__info">
+                  <div class="skills__info-row">
+                    <span>Git &amp; GitHub</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Highlighted coursework &amp; personal work</span>
+
+        <div class="projects__container grid">
+          <!-- Project Card 1 -->
+          <article class="project__card">
+            <div class="project__image-box">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=700&q=80" alt="Portfolio project screenshot" class="project__img" />
+              <div class="project__overlay">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__btn-icon" title="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#home" class="project__btn-icon" title="Live Preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__content">
+              <div class="project__tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project__title">Personal Developer Portfolio</h3>
+              <p class="project__description">
+                A clean, modern portfolio site built for college mini project submission. Features responsive grid, theme switcher, and smooth interaction.
+              </p>
+              <div class="project__links">
+                <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#home" class="link-btn"><i class="fa-solid fa-globe"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project__card">
+            <div class="project__image-box">
+              <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=700&q=80" alt="E-Commerce project screenshot" class="project__img" />
+              <div class="project__overlay">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__btn-icon" title="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project__btn-icon" title="Live Preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__content">
+              <div class="project__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+              <h3 class="project__title">Student Bookstore &amp; Cart</h3>
+              <p class="project__description">
+                An online book catalog with item filtering, product modal, shopping cart calculations, and responsive mobile layout.
+              </p>
+              <div class="project__links">
+                <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#" class="link-btn"><i class="fa-solid fa-globe"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project__card">
+            <div class="project__image-box">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&q=80" alt="Task manager project screenshot" class="project__img" />
+              <div class="project__overlay">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__btn-icon" title="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project__btn-icon" title="Live Preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__content">
+              <div class="project__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Mini Project</span>
+              </div>
+              <h3 class="project__title">Study Planner &amp; Task Tracker</h3>
+              <p class="project__description">
+                A productivity dashboard for students to track assignments, set countdowns for exams, and manage priority checklists.
+              </p>
+              <div class="project__links">
+                <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#" class="link-btn"><i class="fa-solid fa-globe"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch for collaborations</span>
+
+        <div class="contact__container grid">
+          <!-- Info Column -->
+          <div class="contact__info-cards">
+            <div class="contact__card">
+              <i class="fa-solid fa-envelope contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">student@college.edu</span>
+              <a href="mailto:student@college.edu" class="contact__button">
+                Write me <i class="fa-solid fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class="fa-brands fa-linkedin contact__card-icon"></i>
+              <h3 class="contact__card-title">LinkedIn</h3>
+              <span class="contact__card-data">linkedin.com/in/alex-sharma</span>
+              <a href="https://linkedin.com" target="_blank" class="contact__button">
+                Connect <i class="fa-solid fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class="fa-solid fa-location-dot contact__card-icon"></i>
+              <h3 class="contact__card-title">Location</h3>
+              <span class="contact__card-data">New Delhi, India</span>
+              <span class="contact__badge">Open to remote &amp; on-site</span>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact__form-wrapper">
+            <form class="contact__form" id="contact-form">
+              <div class="form__group">
+                <label for="name" class="form__label">Full Name</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="e.g. John Doe" required />
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="form__label">Email Address</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="e.g. john@example.com" required />
+              </div>
+
+              <div class="form__group">
+                <label for="subject" class="form__label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form__input" placeholder="Project Inquiry / Opportunity" required />
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+                <textarea id="message" name="message" rows="5" class="form__input form__textarea" placeholder="Type your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form__btn" id="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+
+              <div class="form__status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <h2 class="footer__title">Alex Sharma</h2>
+      <p class="footer__subtitle">Computer Science Engineering Student • College Mini Project</p>
+
+      <ul class="footer__links">
+        <li><a href="#about" class="footer__link">About</a></li>
+        <li><a href="#education" class="footer__link">Education</a></li>
+        <li><a href="#projects" class="footer__link">Projects</a></li>
+        <li><a href="#skills" class="footer__link">Skills</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a href="https://github.com" target="_blank" class="footer__social"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="footer__social"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com" target="_blank" class="footer__social"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+
+      <p class="footer__copy">&#169; 2025 Alex Sharma. Built with HTML5 &amp; CSS3. Free to customize.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
